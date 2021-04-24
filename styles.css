@@ -1,3 +1,4 @@
+
 /* =================== navbar ==================== */
 .flex-container 
 {
@@ -26,28 +27,30 @@ text-align: left;
 }
 
 a:link {
-  color: rgb(255, 0, 0); 
+  color: rgb(0, 0, 0); 
   background-color: transparent; 
   text-decoration: none!important;
 }
 
 a:visited {
-  color: red;
+  color: rgb(0, 0, 0);
   text-decoration: none!important;
   background-color: transparent;
 }
 
 a:hover 
 {
-  color: red;
+  color: rgb(0, 0, 0);
   text-decoration: none!important;
 }
 
 a:active {
-  color: red;
+  color: rgb(0, 0, 0);
   background-color: transparent;
   text-decoration: none!important;
 }
+
+
 
 /* =================== hero image ==================== */
 
@@ -86,7 +89,6 @@ a:active {
 
 .container
 {
-  flex:2;
   text-align:center;
 }
 
@@ -99,41 +101,26 @@ a:active {
   justify-content: center;
   flex-direction: column;
 }
-.boxgameOne
-   {
-    padding-left: 75px;
-    padding-right: 50px;
-    padding-bottom: 200px;
+
+
+   .box5{
+    padding-top: 250px;
+    vertical-align: center;
+
     flex: 2;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    flex-direction: column;
+    text-align: center;
    }
 
-   .boxgameTwo
+   .box6
    {
-    padding-left: 75px;
-    padding-right: 50px;
-    padding-bottom: 200px;
-    flex: 2;
-    align-items: center;
-    justify-content: center;
-    color: white;
+      padding-top: 100px;
+      vertical-align: center;
+
+      flex: 2;
+      flex-direction: column;
+      text-align: center;
    }
-
-
-   .boxgameThree
-   {
-    padding-left: 75px;
-    padding-right: 50px;
-    padding-bottom: 200px;
-    flex: 2;
-    align-items: center;
-    justify-content: center;
-    color: white;
-   }
-
-
 /* ==== publishing section =====*/
 
 .containerPublishing
@@ -142,14 +129,14 @@ a:active {
 
 }
 
-.box6,.box7
+.box7,.box8
 {
   padding: 200px;
   vertical-align: center;
-flex: 2;
-flex-direction: column;
-text-align: center;
-padding-bottom: 200px;
+  flex: 2;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 200px;
 }
 
 .titleBox
@@ -158,34 +145,19 @@ padding-bottom: 200px;
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==== footer section =====*/
 .footer
 {
-  padding-top: 75px;
-  padding-bottom: 75px;
+ 
   left: 0;
   bottom: 0;
+  height: 32%;
   width: 100%;
-  background-color:brown;
+  background-color:yellowgreen;
   color: white;
   text-align: center;
 
 }
-
-
 
 .box8
 {
@@ -268,5 +240,4 @@ display: inline-block;
       border-color: rgb(51, 255, 0); 
   }
 }
-
-/* waves */
+/*=tree animation=*/
