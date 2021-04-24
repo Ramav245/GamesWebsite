@@ -1,0 +1,272 @@
+/* =================== navbar ==================== */
+.flex-container 
+{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-container > div 
+{
+  margin: 5px;
+  padding-top: 10px;
+  padding-right: 15px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.box0,.box1,.box2
+{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.box3
+{
+flex:2;
+text-align: left;
+}
+
+a:link {
+  color: rgb(255, 0, 0); 
+  background-color: transparent; 
+  text-decoration: none!important;
+}
+
+a:visited {
+  color: red;
+  text-decoration: none!important;
+  background-color: transparent;
+}
+
+a:hover 
+{
+  color: red;
+  text-decoration: none!important;
+}
+
+a:active {
+  color: red;
+  background-color: transparent;
+  text-decoration: none!important;
+}
+
+/* =================== hero image ==================== */
+
+#hero
+{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  size: 100px;
+  
+}
+
+.container
+{
+  flex:2;
+  text-align:center;
+  padding: 50px; 
+}
+
+.box4
+{
+  padding-top: 200px;
+  height: 80vh;
+  justify-content: center;
+}
+/* ==== about section =====*/
+#about
+{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  size: 100px;
+}
+
+.container
+{
+  flex:2;
+  text-align:center;
+}
+
+.containerGames
+{
+    display: flex;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.boxgameOne
+   {
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+
+   .boxgameTwo
+   {
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+
+
+   .boxgameThree
+   {
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-bottom: 200px;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    color: white;
+   }
+
+
+/* ==== publishing section =====*/
+
+.containerPublishing
+{
+  display:flex;
+
+}
+
+.box6,.box7
+{
+  padding: 200px;
+  vertical-align: center;
+flex: 2;
+flex-direction: column;
+text-align: center;
+padding-bottom: 200px;
+}
+
+.titleBox
+{
+  padding-top: 100px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==== footer section =====*/
+.footer
+{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:brown;
+  color: white;
+  text-align: center;
+
+}
+
+
+
+.box8
+{
+  flex: auto;
+  text-align: center;
+}
+
+/* ========= typewriter effect ========== */
+
+@keyframes typewriter {
+  0%, 100% {
+    width: 0;
+  }
+  20%, 80% {
+    width: 10.2em;
+  }
+}
+
+@keyframes caret {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.text_1 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typewriter;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+
+.text_1::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: caret ease-out;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+.typewriter {
+  font-family: Courier, monospace;
+display: inline-block;
+}
+
+.typewriter-text 
+{
+  display: flex;
+  overflow: hidden;
+  letter-spacing: 2px;
+ animation: typing 5s steps(30, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  font-size: 25px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100%
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: rgb(51, 255, 0); 
+  }
+}
+
+/* waves */
